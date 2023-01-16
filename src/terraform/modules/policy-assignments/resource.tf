@@ -1,10 +1,6 @@
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
 
-data "azurerm_resource_group" "rg" {
-  name = var.resource_group_name
-}
-
 resource "azurerm_resource_group_policy_assignment" "policy_assign" {
   name                 = "NIST Assignment - ${data.azurerm_resource_group.rg.name}"
   resource_group_id    = data.azurerm_resource_group.rg.id

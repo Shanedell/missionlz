@@ -1,15 +1,6 @@
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
 
-data "azurerm_resource_group" "bastion_host_rg" {
-  name = var.resource_group_name
-}
-
-data "azurerm_virtual_network" "bastion_host_vnet" {
-  name                = var.virtual_network_name
-  resource_group_name = var.resource_group_name
-}
-
 resource "azurerm_subnet" "bastion_host_subnet" {
   name                 = "AzureBastionSubnet" # the name of the subnet must be 'AzureBastionSubnet'
   resource_group_name  = var.resource_group_name

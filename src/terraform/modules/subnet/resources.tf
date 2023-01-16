@@ -63,10 +63,6 @@ resource "azurerm_subnet_route_table_association" "routetable" {
   route_table_id = azurerm_route_table.routetable.id
 }
 
-locals {
-  nsg_log_categories = ["NetworkSecurityGroupEvent", "NetworkSecurityGroupRuleCounter"]
-}
-
 resource "azurerm_monitor_diagnostic_setting" "nsg" {
   depends_on = [azurerm_network_security_group.nsg]
 
