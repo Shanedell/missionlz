@@ -1,0 +1,8 @@
+UPN,first_name,last_name,company_name,group,job_title
+user1UPN@onmicrosoft.com,Person,Lastone,Company One,Company Developer,Systems Engineer
+user2UPN@onmicrosoft.com,Tester,Lasttwo,Company One,Company Developer,Software Engineer
+user3UPN@onmicrosoft.com,Testing,Lastthree,Company One,Company ITSC,Director
+user4UPN@onmicrosoft.com,Test,Lastfour,Company One,Company ITSC,Administrator
+user5UPN@onmicrosoft.com,Firstperson,Lastfive,Company Two,Contractor,Director
+user6UPN@onmicrosoft.com,Secondperson,Lastsix,Company Two,Contractor,DevOps Engineer
+user7UPN@onmicrosoft.com,Thirdperson,Lastseven,Company Two,Contractor,Software Engineer
